@@ -1,0 +1,79 @@
+.player-loading-background {
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+}
+
+.nano-player-component videoContainer {
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+}
+
+.image-rotator-image {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.episodeArt {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.player-postplay-autoplay-still {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.synopsis,
+.player-postplay-episode-synopsis {
+    font-family: "Redacted";
+}
+
+.synopsis:hover,
+.player-postplay-episode-synopsis:hover {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.episodeSynopsis {
+    font-family: "Redacted";
+    line-height: 1.3em
+}
+
+.episodeSynopsis:hover {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.playback-longpause-container>.content>p:last-child {
+    font-family: "Redacted";
+    line-height: 1.3em
+}
+
+.episodeLockup>.ptrack-content::after {
+    font-family: "nf-icon";
+    content: '\e647';
+    font-size: 3em;
+    max-height: 20px;
+    position: absolute;
+    margin-top: -30%;
+    margin-left: 38%;
+    pointer-events: none;
+    color: rgba(255,255,255,0.6);
+}
+
+.episodeLockup>.ptrack-content:hover::after {
+    color: #E50914;
+}
+
+.episodeArt>.episodePlay>.playRing {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .episodeLockup>.ptrack-content::after {
+      margin-top: -25%;
+      margin-left: 38%;
+  }
+}
+
+.episodeLockup.current>.ptrack-content::after {
+    color: '#fff'
+}

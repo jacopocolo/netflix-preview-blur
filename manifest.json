@@ -1,0 +1,33 @@
+{
+	"content_scripts": [
+		{
+			"js": [
+                "libs/jquery-2.0.3.min.js",
+                "js/blur.js"
+            ],
+			"matches": [
+                "http://*.netflix.com/*",
+                "https://*.netflix.com/*"
+            ]
+        }
+    ],
+	"description": "Blurs the spoilery preview while loading next episode",
+	"icons": {
+		"128": "img/icon_128.png",
+		"48": "img/icon_48.png",
+		"16": "img/icon_16.png"
+	},
+	"manifest_version": 2,
+	"name": "Netflix preview blur",
+	"permissions": [
+        "storage",
+        "http://*.netflix.com/*",
+        "https://*.netflix.com/*"
+    ],
+	"short_name": "Netflix preview blur",
+	"version": "0.0.1",
+			"web_accessible_resources": [
+    "fonts/*",
+		"css/*"
+    		]
+}
